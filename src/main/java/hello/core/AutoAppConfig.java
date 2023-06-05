@@ -14,8 +14,8 @@ import org.springframework.context.annotation.FilterType;
         //Configuration 어노테이션이 붙은 것들은 스프링 빈으로 등록하지 않음
 )
 public class AutoAppConfig {
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository () {
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository () {
+//        return new MemoryMemberRepository();
+//    }
 }
