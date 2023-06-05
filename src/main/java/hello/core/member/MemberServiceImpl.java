@@ -17,6 +17,11 @@ public class MemberServiceImpl implements MemberService{
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId);
     }
+
+    //테스트 용도
+    public MemberRepository getMemberRepository () {
+        return memberRepository;
+    }
 }
 //MemberServiceImpl은 MemoryMemberRepository를 의존하지 않고 MemberRepository 인터페이스만 의존함
 //MemberServiceImpl의 입장에서 생성자를 통해 어떤 구현 객체가 들어올 지는 알 수 없음

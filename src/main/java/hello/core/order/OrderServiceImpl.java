@@ -34,6 +34,11 @@ public class OrderServiceImpl implements OrderService{
         return new Order(memberId, itemName, itemPrice, discountPrice);
 
     }
+
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
     //OrderServiceImpl은 FixDiscountPolicy를 의존하지 않고 DiscountPolicy 인터페이스만 의존함
     //OrderServiceImpl 입장에서 생성자를 통해 어떤 구현 객체가 들어올지는 알 수 없음
     //OrderServiceImpl은 생성자를 통해 어떤 구현 객체를 주입할지는 오직 외부(AppConfig)에서만 결정함
